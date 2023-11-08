@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #cfbfaf;
+  color: #333;
+  font-size: 30px;
+  max-width: 1400px;
+  margin: 20px auto;
+}
+
+img {
+  width: 45em;
+  height: 25em;
+}
+
+/* ------ navbar ------- */
+nav {
+  padding: 10px 20px 30px 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  display: inline;
+}
+
+.navbar {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------ footer ------ */
+/* footer {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .footer {
+    padding: 100px;
+    background: #bfaf9f;
+    color: snow;
+  } */
+
+/* ------ home page ------ */
+/* The following 11 lines of code was adapted from https://www.w3schools.com/howto/howto_css_image_text.asp Accessed: 2023-11-04 */
+.center {
+  position: relative;
+  text-align: center;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1400px;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 5rem;
+  color: #cfbfaf;
+}
+
+.alternative {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#images-me {
+  width: 300px;
+  height: 400px;
+}
+/* ------ about page ------ */
+.container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  flex-wrap: wrap;
+}
+
+#me {
+  width: 20em;
+  height: 20em;
+}
+
+.about-text {
+  padding-left: 3em;
+  width: 30em;
+  line-height: 1.5em;
+  font-size: 0.6rem;
+}
+
+/* ------ contact page ------ */
+
+.contact {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+.info {
+  font-size: 0.6rem;
+}
+.head-con {
+  font-size: 1rem;
+}
+
+.sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+#fname {
+  width: 300px;
+  height: 30px;
+}
+
+#email {
+  width: 300px;
+  height: 30px;
+}
+
+#message {
+  width: 300px;
+  height: 30px;
+}
+
+#submit {
+  background: #333;
+  color: snow;
+  width: 5rem;
+}
+
+/* ------ img page ------ */
+.collage {
+  text-align: center;
+}
+#photo {
+  width: 90%;
+  height: 90%;
+}
