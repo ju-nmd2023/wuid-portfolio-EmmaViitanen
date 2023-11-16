@@ -8,32 +8,38 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <!-- The following 1 line of code was adapted from https://www.youtube.com/watch?v=j5Sl6vx_l1s&t=3s Accsessed: 2023-11-12 -->
+    <!-- This tag adds the JS file to the page -->
+    <script type="module" src="main.js"></script>
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav-links">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
+      <!-- The following 1 line of code was adapted from https://www.youtube.com/watch?v=j5Sl6vx_l1s&t=3s Accsessed: 2023-11-12 -->
+      <!-- This tag adds HEADER -->
+      <my-header></my-header>
     </header>
     <main>
       <div class="contact">
         <div class="form">
-          <!-- he following 9 lines of code was adapted from https://www.w3schools.com/html/html_forms.asp Accessed: 2023-11-05 -->
           <form>
-            <label for="fname">Full name</label><br />
-            <input type="text" id="fname" name="fname" /><br />
-            <label for="email">E-Mail</label><br />
-            <input type="email" id="email" name="fname" /><br />
-            <label for="message">Message</label><br />
-            <input type="text" id="message" name="message" /><br />
-            <input type="submit" id="submit" value="Contact Me" />
+            <div class="input">
+              <label for="fname">Full name</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+
+            <div class="input">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="fname" />
+            </div>
+
+            <div class="input">
+              <label for="message">Message</label>
+              <input type="text" id="message" name="message" />
+            </div>
+            <div class="input">
+              <input type="submit" id="submit" value="Contact Me" />
+            </div>
           </form>
         </div>
         <div class="info">
@@ -58,14 +64,8 @@
         </div>
       </div>
     </main>
-    <!-- <footer>
-      <div class="footer">
-        <p>FOOTER</p>
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </footer> -->
+    <!-- The following 1 line of code was adapted from https://www.youtube.com/watch?v=j5Sl6vx_l1s&t=3s Accsessed: 2023-11-12 -->
+    <!-- This tag adds FOOTER -->
+    <my-footer></my-footer>
   </body>
 </html>

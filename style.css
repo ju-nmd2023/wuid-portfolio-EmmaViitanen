@@ -1,15 +1,14 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 html {
   background: #cfbfaf;
   color: #333;
   font-size: 30px;
-  max-width: 1400px;
-  margin: 20px auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -19,8 +18,9 @@ img {
 
 /* ------ navbar ------- */
 nav {
-  padding: 10px 20px 30px 30px;
-  font-family: "Montserrat", sans-serif;
+  background: #bfaf9f;
+  padding: 20px 20px 30px 30px;
+  top: 0;
 }
 
 li {
@@ -31,10 +31,10 @@ li {
   list-style-type: none;
 }
 
-a {
+.nav-links ul li a {
   text-decoration: none;
   color: #333;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding: 0.5em;
 }
 
@@ -43,54 +43,54 @@ a:hover {
 }
 
 /* ------ footer ------ */
-/* footer {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .footer {
-    padding: 100px;
-    background: #bfaf9f;
-    color: snow;
-  } */
+footer {
+  background: #bfaf9f;
+  padding: 20px 20px 30px 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media-logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 0.5rem;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 0.5em;
+}
 
 /* ------ home page ------ */
-/* The following 11 lines of code was adapted from https://www.w3schools.com/howto/howto_css_image_text.asp Accessed: 2023-11-04 */
+.portfolio-title {
+  margin-top: -30%;
+  color: snow;
+  font-weight: 900;
+}
+
 .center {
-  position: relative;
-  text-align: center;
-}
-
-.centered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1400px;
-  transform: translate(-50%, -50%);
-}
-
-h1 {
-  font-size: 5rem;
-  color: #cfbfaf;
-}
-
-.alternative {
-  width: 100%;
-  height: 600px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 80px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  padding-bottom: 450px;
+  padding-top: 50px;
 }
 
-#images-me {
-  width: 300px;
-  height: 400px;
-}
 /* ------ about page ------ */
 .container {
-  padding-top: 40px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,12 +118,12 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 label {
   font-size: 0.6rem;
+  padding-bottom: 10px;
 }
 
 .info {
@@ -138,32 +138,236 @@ label {
   height: 1rem;
 }
 
+.input {
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+  padding: 10px 10px;
+}
+
 #fname {
-  width: 300px;
-  height: 30px;
+  width: 500px;
+  height: 40px;
 }
 
 #email {
-  width: 300px;
-  height: 30px;
+  width: 500px;
+  height: 40px;
 }
 
 #message {
-  width: 300px;
-  height: 30px;
+  width: 500px;
+  height: 100px;
 }
 
 #submit {
   background: #333;
   color: snow;
-  width: 5rem;
+  padding: 10px 20px 10px 20px;
 }
 
-/* ------ img page ------ */
-.collage {
-  text-align: center;
+/*------ Projects ------*/
+
+.project {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-#photo {
-  width: 90%;
-  height: 90%;
+
+.project-alt {
+  background: snow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-alt img {
+  max-width: 10rem;
+  height: 10rem;
+  padding-top: 10px;
+}
+
+figcaption {
+  padding: 10px;
+}
+
+/*------ Detail page ------*/
+.detail {
+  padding-left: 50px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-header {
+  font-size: 2rem;
+}
+
+.project-info p {
+  font-size: 0.6rem;
+}
+
+.project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 12rem;
+  height: 16rem;
+}
+
+/*------ Media Queries ------*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px) {
+  /* Header */
+  .nav-links ul li a {
+    font-size: 0.45rem;
+    padding: 0.5em;
+  }
+
+  /* Footer */
+  .social-media-logo {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  /* Home page */
+  .portfolio-title {
+    font-size: 2rem;
+    margin-top: -60%;
+  }
+
+  /* About page */
+  .about-text {
+    padding-top: 50px;
+    font-size: 0.4rem;
+    max-width: 10rem;
+  }
+
+  #me {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .container {
+    padding-bottom: 700px;
+  }
+
+  /* Contact Page */
+  .form {
+    padding-top: 100px;
+  }
+  .info {
+    padding-top: 100px;
+  }
+
+  /* Project page */
+  .project {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .project-alt {
+    max-width: 4rem;
+  }
+
+  .project-alt img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  figcaption {
+    font-size: 0.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+  /* Header */
+  .nav-links ul li a {
+    font-size: 0.8rem;
+    padding: 0.8em;
+  }
+
+  /* Footer */
+  .social-media-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* Home Page */
+  .portfolio-title {
+    font-size: 3rem;
+    margin-top: -45%;
+  }
+
+  /* About Page */
+  .about-text {
+    padding-top: 50px;
+    font-size: 0.6rem;
+    max-width: 16rem;
+  }
+
+  #me {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .container {
+    padding-bottom: 600px;
+  }
+
+  /* Project page */
+  .project {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .project-alt {
+    max-width: 7.5rem;
+  }
+
+  .project-alt img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  figcaption {
+    font-size: 0.6rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .portfolio-title {
+    color: snow;
+    font-size: 4rem;
+    margin-top: -30%;
+  }
+
+  .project {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project-alt {
+    background: snow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 12rem;
+  }
+
+  .project-alt img {
+    width: 10rem;
+    height: 10rem;
+    padding-top: 10px;
+  }
+
+  .project-alt-p {
+    padding: 10px;
+  }
+
+  .contact {
+    padding-bottom: 580px;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+  }
 }
