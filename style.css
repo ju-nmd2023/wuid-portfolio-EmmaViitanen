@@ -189,6 +189,34 @@ figcaption {
   padding: 10px;
 }
 
+/* The following 26 lines of code was adapted from https://www.w3schools.com/css/css3_animations.asp Accessed: 2023-11-23 */
+#mulan {
+  animation-name: red;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes red {
+  0% {
+    background-color: snow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  25% {
+    background-color: red;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.5),
+      0 6px 20px 0 rgba(255, 0, 0, 0.3);
+  }
+  50% {
+    background-color: snow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  100% {
+    background-color: red;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.5),
+      0 6px 20px 0 rgba(255, 0, 0, 0.3);
+  }
+}
+
 /*------ Detail page ------*/
 .detail {
   padding-left: 50px;
@@ -211,6 +239,18 @@ figcaption {
   justify-content: left;
   width: 12rem;
   height: 16rem;
+  /* The following 15 lines of code was adapted from https://blog.hubspot.com/website/css-fade-in Accessed: 2023-11-23 */
+  animation-name: fadein;
+  animation-duration: 10s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 /*------ Media Queries ------*/
