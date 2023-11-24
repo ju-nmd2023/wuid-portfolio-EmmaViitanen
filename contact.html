@@ -10,7 +10,8 @@
     />
     <!-- The following 1 line of code was adapted from https://www.youtube.com/watch?v=j5Sl6vx_l1s&t=3s Accsessed: 2023-11-12 -->
     <!-- This tag adds the JS file to the page -->
-    <script type="module" src="main.js"></script>
+    <script src="main.js" defer></script>
+    <script src="function.js" defer></script>
     <title>Contact</title>
   </head>
   <body>
@@ -38,10 +39,13 @@
               <input type="text" id="message" name="message" />
             </div>
             <div class="input">
-              <input type="submit" id="submit" value="Contact Me" />
+              <!-- The following 2 lines of code was adapted from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm2 Accessed: 2023-11-24 -->
+              <button type="button" id="confirm-button">Confrim</button>
+              <p id="demo"></p>
             </div>
           </form>
         </div>
+
         <div class="info">
           <p class="head-con">Contact</p>
           <p>viitanen.emma@gmail.com</p>
